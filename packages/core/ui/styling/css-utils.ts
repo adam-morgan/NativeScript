@@ -3,7 +3,7 @@ import { CoreTypes } from '../../core-types';
 import { Length } from './style-properties';
 
 export function cleanupImportantFlags(value: string, propertyName: string) {
-	const index = value?.indexOf('!important');
+	const index = value?.indexOf?.('!important');
 	if (index >= 0) {
 		if (Trace.isEnabled()) {
 			Trace.write(`The !important css rule is currently not supported. Property: ${propertyName}`, Trace.categories.Style, Trace.messageType.warn);
